@@ -1,7 +1,8 @@
 
 
 
-class CesdQuestioniare:
+
+class CesdQuestionnaire:
     def __init__(self, filename="results.txt"):
         self.filename = filename
         self.user_score = 0 
@@ -15,7 +16,6 @@ class CesdQuestioniare:
         self.suicide = 0
 
 
-
     """ 
     Update the user_score by the amount update_value
 
@@ -23,13 +23,13 @@ class CesdQuestioniare:
     
         If value is update correctly: return 1
                        
-        update_value must be [0, 4]. If not: return 0
+        update_value must be [0, 4]. If not: do nothing and return 0
  
         For other error: return 0
 
     """ 
     def update_score(self, update_value):
-        pass
+        pass 
     
 
     """
@@ -90,7 +90,7 @@ class CesdQuestioniare:
         For other error: return 0
 
     """     
-    def update_concentation(self, update_value):
+    def update_thinking(self, update_value):
         pass
 
     """ 
@@ -156,7 +156,8 @@ class CesdQuestioniare:
         pass
 
 
-    """ 
+    """
+    NOT TO BE
     Calculates the total score the user got from the questioniare.
 
     The score is the sum of all the users responses.
@@ -181,7 +182,7 @@ class CesdQuestioniare:
 
     """ 
 
-    def meets_depression_subthreshhold(self, update_value):
+    def meets_depression_subthreshhold(self):
         pass
 
 
@@ -528,6 +529,6 @@ class CesdQuestioniare:
 
 
 if __name__=="__main__":
-    question = CesdQuestioniare()
+    question = CesdQuestionnaire()
     question.start_test()
     
