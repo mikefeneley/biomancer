@@ -1,5 +1,4 @@
 # biomancer
 Medical diagnosis tool 
 
-Trying to see if Jay can pull the readme.
-I pulled the readme.
+This is a skeleton repository. No significant work has been done on this project yet.
